@@ -6,7 +6,7 @@
     <item android:state_pressed="true" >
         <shape>
             <solid
-                android:color="#81A569" />
+                android:color="#94DFB5" />
 <!--            <stroke-->
 <!--                android:width="1dp"-->
 <!--                android:color="#FFFFFF" />-->
@@ -16,7 +16,7 @@
     </item>
     <item>
         <shape>
-            <solid android:color="#476930"/>
+            <solid android:color="#5BC47A"/>
 <!--            <stroke-->
 <!--                android:width="1dp"-->
 <!--                android:color="#FFFFFF" />-->
