@@ -7,205 +7,205 @@
     android:background="@drawable/bg_login_screen"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_student_assistance_white_512px" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="160dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_student_assistance_white_512px" />-->
 
-    <TextView
-        android:id="@+id/txtLoginLabel"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="48dp"
-        android:fontFamily="@font/darker_grotesque_light"
-        android:text="Hello"
-        android:textColor="#474747"
-        android:textSize="72sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+<!--    <TextView-->
+<!--        android:id="@+id/txtLoginLabel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_marginStart="48dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginEnd="48dp"-->
+<!--        android:fontFamily="@font/darker_grotesque_light"-->
+<!--        android:text="Hello"-->
+<!--        android:textColor="#474747"-->
+<!--        android:textSize="72sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageView" />-->
 
-    <TextView
-        android:id="@+id/txtLabel2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Sign in to your account"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLoginLabel" />
+<!--    <TextView-->
+<!--        android:id="@+id/txtLabel2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="48dp"-->
+<!--        android:layout_marginEnd="48dp"-->
+<!--        android:fontFamily="sans-serif-medium"-->
+<!--        android:text="Sign in to your account"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtLoginLabel" />-->
 
-    <EditText
-        android:id="@+id/etUsername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="48dp"
-        android:background="@drawable/edit_text_boarder"
-        android:drawableLeft="@drawable/ic_baseline_person_outline_30_green"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:hint="username"
-        android:inputType="textPersonName"
-        android:minHeight="50dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLabel2"
-        tools:visibility="visible" />
+<!--    <EditText-->
+<!--        android:id="@+id/etUsername"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="48dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginEnd="48dp"-->
+<!--        android:background="@drawable/edit_text_boarder"-->
+<!--        android:drawableLeft="@drawable/ic_baseline_person_outline_30_green"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:ems="10"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:hint="username"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:minHeight="50dp"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:paddingEnd="15dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtLabel2"-->
+<!--        tools:visibility="visible" />-->
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="48dp"
-        android:background="@drawable/edit_text_boarder"
-        android:drawableLeft="@drawable/ic_outline_lock_30_green"
-        android:drawablePadding="10dp"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:hint="password"
-        android:inputType="textPassword"
-        android:minHeight="50dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+<!--    <EditText-->
+<!--        android:id="@+id/etPassword"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="48dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="48dp"-->
+<!--        android:background="@drawable/edit_text_boarder"-->
+<!--        android:drawableLeft="@drawable/ic_outline_lock_30_green"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:ems="10"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:hint="password"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:minHeight="50dp"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:paddingEnd="15dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/etUsername" />-->
 
-    <TextView
-        android:id="@+id/txtForgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
-        android:text="Forgot password?"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+<!--    <TextView-->
+<!--        android:id="@+id/txtForgotPassword"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:text="Forgot password?"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.894"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/etPassword" />-->
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnSignIn"
-        android:layout_width="172dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="110dp"
-        android:background="@drawable/round_edges_button"
-        android:fontFamily="sans-serif-medium"
-        android:text="Sign in"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtForgotPassword" />
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/btnSignIn"-->
+<!--        android:layout_width="172dp"-->
+<!--        android:layout_height="52dp"-->
+<!--        android:layout_marginStart="110dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginEnd="110dp"-->
+<!--        android:background="@drawable/round_edges_button"-->
+<!--        android:fontFamily="sans-serif-medium"-->
+<!--        android:text="Sign in"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtForgotPassword" />-->
 
-    <TextView
-        android:id="@+id/txtLabel3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="- Or sign in with -"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/ibtnLinkedin"
-        app:layout_constraintStart_toStartOf="@+id/ibtnLinkedin"
-        app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+<!--    <TextView-->
+<!--        android:id="@+id/txtLabel3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:text="- Or sign in with -"-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/ibtnLinkedin"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/ibtnLinkedin"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />-->
 
-    <ImageButton
-        android:id="@+id/ibtnGoogle"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/image_button_round_edge"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ibtnLinkedin"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLabel3"
-        app:layout_constraintVertical_bias="0.019"
-        app:srcCompat="@drawable/ic_google_32px"
-        tools:ignore="SpeakableTextPresentCheck" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/ibtnGoogle"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:background="@drawable/image_button_round_edge"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/ibtnLinkedin"-->
+<!--        app:layout_constraintHorizontal_bias="0.487"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtLabel3"-->
+<!--        app:layout_constraintVertical_bias="0.019"-->
+<!--        app:srcCompat="@drawable/ic_google_32px"-->
+<!--        tools:ignore="SpeakableTextPresentCheck" />-->
 
-    <ImageButton
-        android:id="@+id/ibtnLinkedin"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/image_button_round_edge"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ibtnFacebook"
-        app:layout_constraintStart_toEndOf="@+id/ibtnGoogle"
-        app:layout_constraintTop_toBottomOf="@+id/txtLabel3"
-        app:layout_constraintVertical_bias="0.019"
-        app:srcCompat="@drawable/ic_linkedin_32px"
-        tools:ignore="SpeakableTextPresentCheck" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/ibtnLinkedin"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="24dp"-->
+<!--        android:background="@drawable/image_button_round_edge"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/ibtnFacebook"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/ibtnGoogle"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtLabel3"-->
+<!--        app:layout_constraintVertical_bias="0.019"-->
+<!--        app:srcCompat="@drawable/ic_linkedin_32px"-->
+<!--        tools:ignore="SpeakableTextPresentCheck" />-->
 
-    <ImageButton
-        android:id="@+id/ibtnFacebook"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="50dp"
-        android:background="@drawable/image_button_round_edge"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.345"
-        app:layout_constraintStart_toEndOf="@+id/ibtnLinkedin"
-        app:layout_constraintTop_toBottomOf="@+id/txtLabel3"
-        app:layout_constraintVertical_bias="0.019"
-        app:srcCompat="@drawable/ic_facebook_32px"
-        tools:ignore="SpeakableTextPresentCheck" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/ibtnFacebook"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="50dp"-->
+<!--        android:background="@drawable/image_button_round_edge"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.345"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/ibtnLinkedin"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtLabel3"-->
+<!--        app:layout_constraintVertical_bias="0.019"-->
+<!--        app:srcCompat="@drawable/ic_facebook_32px"-->
+<!--        tools:ignore="SpeakableTextPresentCheck" />-->
 
-    <TextView
-        android:id="@+id/txtLabel4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:text="Don't have an account?"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ibtnLinkedin"
-        app:layout_constraintVertical_bias="0.48000002" />
+<!--    <TextView-->
+<!--        android:id="@+id/txtLabel4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="44dp"-->
+<!--        android:text="Don't have an account?"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ibtnLinkedin"-->
+<!--        app:layout_constraintVertical_bias="0.48000002" />-->
 
-    <TextView
-        android:id="@+id/txtSignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="Sign up"
-        android:textColor="@color/green_shade5"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txtLabel4"
-        app:layout_constraintTop_toBottomOf="@+id/ibtnLinkedin"
-        app:layout_constraintVertical_bias="0.48000002" />
+<!--    <TextView-->
+<!--        android:id="@+id/txtSignUp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="4dp"-->
+<!--        android:text="Sign up"-->
+<!--        android:textColor="@color/green_shade5"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/txtLabel4"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ibtnLinkedin"-->
+<!--        app:layout_constraintVertical_bias="0.48000002" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

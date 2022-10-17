@@ -13,4 +13,9 @@
     <color name="green_shade4">#86B049</color>
     <color name="yuma">#C8B88A</color>
     <color name="green_shade5">#81A569</color>
+    <color name="progress_bar">#272727</color>
+    <color name="yellow_1">#ffe000</color>
+    <color name="yellow_2">#ffbb00</color>
+    <color name="orange_1">#ff8600</color>
+    <color name="hint_color">#888888</color>
 </resources>
