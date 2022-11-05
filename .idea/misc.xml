@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/drawable/avatar_circle.xml" value="0.143" />
+        <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/drawable/background_gradients.xml" value="0.1905" />
         <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/drawable/edit_text_boarder.xml" value="0.2585" />
         <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/drawable/edit_text_shape.xml" value="0.2275" />
         <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/drawable/ic_baseline_arrow_forward_32.xml" value="0.185" />
@@ -15,10 +17,12 @@
         <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/drawable/image_button_round_edge.xml" value="0.152" />
         <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/drawable/round_edges_button.xml" value="0.2585" />
         <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/drawable/rounded_button.xml" value="0.2275" />
-        <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/layout/activity_home.xml" value="0.22592592592592592" />
-        <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/layout/activity_login_v2.xml" value="0.2" />
+        <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/layout/activity_home.xml" value="0.6" />
+        <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/layout/activity_login_v2.xml" value="0.264" />
         <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/layout/activity_splash.xml" value="0.264" />
+        <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/layout/activity_splash.xml" value="0.176" />
+        <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/layout/activity_subject_details.xml" value="0.536" />
+        <entry key="..\:/Users/jeffe/Documents/Android Studio/StudentAssistanceApp/app/src/main/res/layout/row_subjects.xml" value="0.4947867298578199" />
       </map>
     </option>
   </component>
