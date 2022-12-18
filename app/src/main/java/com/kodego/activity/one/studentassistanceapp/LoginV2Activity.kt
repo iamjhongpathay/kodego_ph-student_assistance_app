@@ -34,18 +34,16 @@ class LoginV2Activity : AppCompatActivity() {
 
             var name: String = "Juan"
             var lname: String = "Masipag"
-            var id: String = "1000141116"
-            var course: String = "Mobile App Development,"
+            var nickName: String = "JM"
+            var id: String = "1000141118"
+            var course: String = "Mobile App Development"
             var section: String = "MD1P"
             var avatarPath: Int = R.drawable.sample_two
 
-
-
-            intent.putExtra("nameID", name)
-            intent.putExtra("lastname", lname)
-            intent.putExtra("id", "ID: $id")
-            intent.putExtra("courseID", course)
-            intent.putExtra("sectionID", "$section")
+            intent.putExtra("fullNameID", "$name $lname")
+            intent.putExtra("nickNameID", nickName)
+            intent.putExtra("id", "$id")
+            intent.putExtra("courseSectionID", "$course - $section")
             intent.putExtra("avatarPathID", avatarPath)
 
             startActivity(intent)

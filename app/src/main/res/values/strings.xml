@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">SAMs</string>
+    //User Strings
+    <string name="user_full_name">Full Name</string>
+    <string name="user_course_section">Course - Section</string>
+    <string name="user_id_number">0123456789</string>
+    <string name="user_location">City</string>
+    <string name="user_phone_number">0123-456-7890</string>
+    <string name="user_nick_name">Hello Name!</string>
+    //Subjects Strings
+    <string name="my_subjects">My Subjects</string>
+    <string name="subject_name">Name of Subject</string>
+    <string name="subject_start_time">00:00</string>
+    <string name="subject_end_time">00:00</string>
+    <string name="subject_start_time_meridiem">AM</string>
+    <string name="subject_end_time_meridiem">PM</string>
 </resources>

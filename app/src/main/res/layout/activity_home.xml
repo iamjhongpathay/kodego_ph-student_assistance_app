@@ -8,31 +8,163 @@
     tools:context=".HomeActivity">
 
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView"
-        style="@style/MyCardView"
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView4"
         android:layout_width="match_parent"
-        android:layout_height="125dp"
-        android:layout_margin="5dp"
-        app:cardCornerRadius="15dp"
+        android:layout_height="200dp"
+        android:background="@drawable/background_gradients"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/customRoundedImageView">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/background_gradients">
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView3"
+                style="@style/MyCardView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeWidth="0dp">
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="-50dp"
+                android:translationZ="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardView3">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/ivUsersAvatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:elevation="0dp"
+                    android:src="@drawable/avatar_place_holder"
+                    app:civ_border_width="2dp" />
+
+                <ImageButton
+                    android:id="@+id/btnChangeImageCameraIcon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center|right"
+                    android:background="@drawable/image_camera_button_circular"
+                    android:translationZ="5dp"
+                    app:srcCompat="@drawable/ic_baseline_photo_camera_24"
+                    app:tint="@color/orange_1"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:shadowRadius="5"
+                android:text="@string/user_full_name"
+                android:textAlignment="center"
+                android:textColor="@color/progress_bar"
+                android:textSize="20sp"
+                android:translationZ="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
+                app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+
+            <TextView
+                android:id="@+id/tvCourseSection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/user_course_section"
+                android:textColor="@color/hint_color"
+                android:textSize="16sp"
+                android:translationZ="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvFullName"
+                app:layout_constraintStart_toStartOf="@+id/tvFullName"
+                app:layout_constraintTop_toBottomOf="@+id/tvFullName" />
+
+            <TextView
+                android:id="@+id/tvStudentID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/user_id_number"
+                android:textAlignment="viewStart"
+                android:textColor="@color/hint_color"
+                android:textSize="14sp"
+                android:translationZ="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/tvCourseSection"
+                app:layout_constraintStart_toStartOf="@+id/tvCourseSection"
+                app:layout_constraintTop_toBottomOf="@+id/tvCourseSection" />
+
+            <ImageButton
+                android:id="@+id/btnCopyIDIcon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="5dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:translationZ="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvStudentID"
+                app:layout_constraintStart_toEndOf="@+id/tvStudentID"
+                app:layout_constraintTop_toTopOf="@+id/tvStudentID"
+                app:srcCompat="@drawable/ic_baseline_content_copy_24"
+                app:tint="@color/orange_1"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="@color/hint_color"
+                android:translationZ="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvStudentID" />
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
                 android:layout_width="100dp"
                 android:layout_height="25dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+                app:layout_constraintTop_toTopOf="@+id/frameLayout2">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -56,121 +188,47 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
-            <com.mikhaellopez.circularimageview.CircularImageView
-                android:id="@+id/avatarImage"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="15dp"
-                android:elevation="5dp"
-                android:src="@drawable/avatar_place_holder"
-                app:civ_border_color="#EAEAEA"
-                app:civ_border_width=".5dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
             <TextView
-                android:id="@+id/txtViewName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:shadowColor="@color/hint_color"
-                android:shadowRadius="5"
-                android:text="Name"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/avatarImage"
-                app:layout_constraintTop_toTopOf="@+id/avatarImage" />
-
-            <TextView
-                android:id="@+id/txtViewLastname"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:fontFamily="sans-serif-medium"
-                android:shadowColor="@color/hint_color"
-                android:shadowRadius="5"
-                android:text="Surname"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintStart_toEndOf="@+id/txtViewName"
-                app:layout_constraintTop_toTopOf="@+id/txtViewName" />
-
-            <TextView
-                android:id="@+id/txtViewID"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:fontFamily="sans-serif-medium"
-                android:text="ID: 00000000"
-                android:textAlignment="viewStart"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                app:layout_constraintStart_toEndOf="@+id/avatarImage"
-                app:layout_constraintTop_toBottomOf="@+id/txtViewName" />
-
-            <com.google.android.material.divider.MaterialDivider
-                android:id="@+id/horizontalDivider1"
+                android:id="@+id/tvNickName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="5dp"
-                android:alpha=".4"
-                app:dividerColor="@color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/avatarImage"
-                app:layout_constraintTop_toBottomOf="@+id/txtViewID" />
-
-            <TextView
-                android:id="@+id/txtViewCourse"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="Course"
-                android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/horizontalDivider1"
-                app:layout_constraintTop_toBottomOf="@+id/horizontalDivider1" />
-
-            <TextView
-                android:id="@+id/txtViewSection"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="Section"
+                android:fontFamily="@font/atma_medium"
+                android:text="@string/user_nick_name"
+                android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="16sp"
+                android:textSize="28sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/txtViewCourse"
-                app:layout_constraintStart_toEndOf="@+id/txtViewCourse"
-                app:layout_constraintTop_toTopOf="@+id/txtViewCourse" />
+                app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+                app:layout_constraintEnd_toStartOf="@+id/frameLayout2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardView2" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Subjects"
+        android:layout_marginStart="15dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/my_subjects"
         android:textColor="@color/progress_bar"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.003"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerSubjects"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
